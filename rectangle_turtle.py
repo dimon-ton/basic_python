@@ -11,7 +11,7 @@ def Rectangle(x):
         tao.fd(x)
         tao.lt(90)
 
-
+    
 def Go(x, y):
     tao.penup()
     tao.goto(x,y)
