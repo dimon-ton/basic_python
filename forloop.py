@@ -22,7 +22,7 @@ for f in friend2.values():
     print(f)
 
 for i,f in enumerate(friend,start=10):
-    print(i,f)
+    print('order',i,f)
 
 for i,f in enumerate(friend2.items()):
     print('order',i,f)
