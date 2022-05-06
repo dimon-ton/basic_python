@@ -17,5 +17,5 @@ def Go(x, y):
     tao.goto(x,y)
     tao.pendown()
 
-Go(100,100)
-Rectangle(300)
+Go(50,50)
+Rectangle(150)
