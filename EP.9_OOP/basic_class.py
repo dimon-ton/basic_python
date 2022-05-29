@@ -1,10 +1,13 @@
+from turtle import Turtle
+
+
 class Car:
     brand = None
     year = None
     fuel = None
     status = None
 
-    def __init__(self, brand, year, fuel, status):
+    def __init__(self, brand='Toyota', year=2020, fuel=100.00, status=True):
         self.brand = brand
         self.year = year
         self.fuel = fuel
@@ -22,7 +25,7 @@ class Car:
 
 if __name__ == '__main__':
     car01 = Car('Benz',2020,10.00,True)
-    car02 =Car('Ford',2019,50.00,False)
+    car02 = Car('Ford',2019,50.00,False)
     
     print('ยี่ห้อ: {}'.format(car01.brand))
     print('ปีที่ผลิต: {}'.format(car01.year))
