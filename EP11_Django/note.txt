@@ -1,0 +1,18 @@
+สิ่งที่ต้องมีในการสร้างเว็บ
+1.python
+2.Editor
+3.Virtualenv
+4.Django
+สรุปคำสั่งสร้างโปรเจค Django
+    1.python -m pip install virtualenv
+    2.ลอง pip list ดู virtualenv
+    3.cd path ของเรา
+    4.สร้าง venv
+        python -m virtual venv
+    5.activate
+        .\venv\scripts\activate
+    6.python manage.py runserver
+    7.python manage.py migrat
+    8.python manage.py startapp myProjectA
+    9.python manage.py createsuperuser
+    
