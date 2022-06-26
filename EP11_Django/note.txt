@@ -11,10 +11,54 @@
         python -m virtualenv venv
     5.activate
         .\venv\scripts\activate
-    6.pip install django==4.0
-    7.django-admin startproject projectName
-    6.python manage.py runserver
-    7.python manage.py migrate
-    8.python manage.py startapp myApp
-    9.python manage.py createsuperuser
+    7.cd enter project
+    8.pip install django==4.0
+    9.django-admin startproject projectName
+    10.python manage.py runserver
+    11.python manage.py migrate
+    12.python manage.py startapp myApp
+    13.python manage.py createsuperuser
     
+
+Django EP.2
+
+# register models
+    open admin.py
+    add code from the following
+
+##############################################################################
+  
+    from .models import *
+
+
+    admin.site.register(Product)
+    admin.site.register(ContactList)
+
+##############################################################################
+in cmd
+    python manage.py makemigrations
+    python manage.py migrate
+
+in view.py
+    use algorithim
+
+####################################################################################
+def homepage(request):
+    products = Product.objects.all()
+    allproducts = []
+    column = []
+
+    for i, p in enumerate(products, start=1):
+        if i % 3 == 0:
+            column.append(p)
+            allproducts.append(column)
+            column = []
+        else:
+            column.append(p)
+    if len(column) != 0:
+        allproducts.append(column)
+    context = {'product':allproducts}
+
+    return render(request, 'changApp/home.html', context)
+####################################################################################
+

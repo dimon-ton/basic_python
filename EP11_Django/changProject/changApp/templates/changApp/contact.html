@@ -1,0 +1,23 @@
+{% extends 'changApp/base.html' %}
+
+{% block content %}
+<div class="container mt-3">
+    <h2>ติดต่อสอบถาม</h2>
+    <form method="POST">
+        {% csrf_token %}
+      <div class="form-group mb-4">
+        <label for="email">อีเมล:</label>
+        <input type="text" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+      <div class="form-group mb-4">
+        <label for="heading">หัวข้อ:</label>
+        <input type="text" class="form-control" id="heading" placeholder="Enter heading" name="heading">
+      </div>
+      <div class="form-group mb-4">
+        <label for="detail">รายละเอียด:</label>
+        <textarea class="form-control" rows="5" id="details" name="detail" placeholder="enter detail"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock content %}
