@@ -4,7 +4,7 @@
 3.Virtualenv
 4.Django
 สรุปคำสั่งสร้างโปรเจค Django
-    1.python -m pip install virtualenvimpo
+    1.python -m pip install virtualenv
     2.ลอง pip list ดู virtualenv
     3.cd path ของเรา
     4.สร้าง venv
