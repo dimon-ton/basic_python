@@ -47,4 +47,4 @@ submit_button = driver.find_element(By.XPATH, '/html/body/div[2]/form/button')
 submit_button.click()
 
 time.sleep(20)
-driver.close()
+driver.quit()
