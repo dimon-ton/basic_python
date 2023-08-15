@@ -1,7 +1,7 @@
 from email import message
 from songline import Sendline
 
-token = '4ED99HkYOoqVUEdd6SPN4OOegI3S7zqu5ZYYwi5QstA'
+token = '--line-token--'
 
 messenger = Sendline(token)
 
